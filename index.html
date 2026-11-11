@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>CH Sai Akshitha | Portfolio</title>
+  <meta name="description" content="Portfolio of CH Sai Akshitha — Computer Science undergraduate, developer, and AI/ML enthusiast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1020;--panel:#121a2e;--panel2:#17223a;--text:#edf2ff;--muted:#a5b1ca;--line:rgba(255,255,255,.1);--accent:#8b9cff;--accent2:#69e0cb;--pink:#e5a2d2;--shadow:0 22px 60px rgba(0,0,0,.28)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 82% 8%,rgba(105,224,203,.12),transparent 28%),radial-gradient(circle at 10% 28%,rgba(139,156,255,.14),transparent 30%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Space Grotesk";font-weight:700;letter-spacing:-.04em;font-size:1.2rem}.brand span{color:var(--accent2)}
+    .navlinks{display:flex;gap:26px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--text)}.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 11px;border-radius:10px}
+    section{padding:88px 0}.hero{min-height:calc(100vh - 72px);display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:55px;padding-top:65px}
+    .eyebrow{color:var(--accent2);font-size:.82rem;text-transform:uppercase;letter-spacing:.18em;font-weight:700}.hero h1{font:700 clamp(3rem,7vw,5.7rem)/1.02 "Space Grotesk";letter-spacing:-.065em;margin:18px 0}.hero h1 span{color:var(--accent)}.hero p{font-size:1.08rem;color:var(--muted);max-width:640px}
+    .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 19px;border-radius:12px;font-weight:700;border:1px solid var(--line);transition:.2s}.btn.primary{background:linear-gradient(110deg,var(--accent),#a78bfa);color:#0b1020;border:0}.btn:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .hero-card{background:linear-gradient(145deg,rgba(139,156,255,.16),rgba(105,224,203,.08));border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero-card:before{content:"";position:absolute;width:210px;height:210px;border-radius:50%;background:rgba(139,156,255,.16);filter:blur(3px);right:-80px;top:-90px}
+    .avatar{width:84px;height:84px;border-radius:24px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#0b1020;font:700 2rem "Space Grotesk";margin-bottom:22px}.hero-card h3{font:600 1.35rem "Space Grotesk";margin:0 0 6px}.hero-card p{font-size:.95rem;margin:0 0 22px}.quick{display:grid;grid-template-columns:1fr 1fr;gap:12px}.quick div{background:rgba(11,16,32,.42);padding:13px;border:1px solid var(--line);border-radius:14px}.quick strong{display:block;font:700 1.35rem "Space Grotesk"}.quick small{color:var(--muted)}
+    .section-head{margin-bottom:32px}.section-head .eyebrow{margin-bottom:8px}.section-head h2{font:700 clamp(2rem,4vw,3rem) "Space Grotesk";letter-spacing:-.05em;margin:0}.section-head p{color:var(--muted);max-width:650px;margin:10px 0 0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{background:rgba(18,26,46,.82);border:1px solid var(--line);border-radius:20px;padding:25px}.panel p{color:var(--muted);margin:0}.facts{display:grid;grid-template-columns:1fr 1fr;gap:13px}.fact{padding:16px;border-radius:14px;background:var(--panel2)}.fact b{display:block;font-size:.9rem}.fact span{color:var(--muted);font-size:.88rem}
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{background:linear-gradient(150deg,rgba(23,34,58,.95),rgba(18,26,46,.95));border:1px solid var(--line);border-radius:20px;padding:24px;transition:.25s}.project:hover{transform:translateY(-5px);border-color:rgba(139,156,255,.5);box-shadow:var(--shadow)}.project-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.project h3{font:600 1.25rem "Space Grotesk";margin:0 0 10px}.tag{font-size:.72rem;color:var(--accent2);border:1px solid rgba(105,224,203,.3);padding:5px 9px;border-radius:99px;white-space:nowrap}.project p{color:var(--muted);margin:0 0 17px}.stack{display:flex;gap:8px;flex-wrap:wrap}.stack span{font-size:.77rem;background:rgba(139,156,255,.12);color:#cbd3ff;padding:5px 9px;border-radius:7px}
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skillbox h3{font:600 1.08rem "Space Grotesk";margin:0 0 14px}.skillbox p{color:var(--muted);margin:0}.skillbox{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}
+    .timeline{display:grid;gap:14px}.edu{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);padding:20px 22px;border-radius:16px}.edu h3{margin:0;font:600 1.05rem "Space Grotesk"}.edu p{margin:4px 0 0;color:var(--muted)}.date{color:var(--accent2);white-space:nowrap;font-size:.9rem}
+    .certs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.cert{padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:15px}.cert b{display:block}.cert span{color:var(--muted);font-size:.85rem}
+    .contact{background:linear-gradient(120deg,rgba(139,156,255,.16),rgba(105,224,203,.09));border:1px solid var(--line);border-radius:26px;padding:38px;display:flex;justify-content:space-between;align-items:center;gap:25px}.contact h2{font:700 clamp(1.8rem,4vw,2.7rem) "Space Grotesk";margin:0 0 8px}.contact p{color:var(--muted);margin:0}.contact-links{display:flex;gap:10px;flex-wrap:wrap}
+    footer{padding:30px 0;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);margin-top:80px}.foot{display:flex;justify-content:space-between;gap:20px}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;gap:28px;padding-top:55px}.hero-card{max-width:500px}.about-grid,.cards{grid-template-columns:1fr}.skills,.certs{grid-template-columns:1fr 1fr}.contact{display:block}.contact-links{margin-top:20px}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,1120px)}section{padding:65px 0}.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#10182b;padding:20px;flex-direction:column;gap:15px;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.skills,.certs,.facts{grid-template-columns:1fr}.edu{display:block}.date{display:block;margin-top:8px}.foot{display:block}.foot span{display:block;margin-top:8px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#home">akshitha<span>.</span></a>
+  <button class="menu" id="menuBtn" aria-label="Toggle navigation">Menu</button>
+  <div class="navlinks" id="navlinks"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
+</nav></div></header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow">Computer Science Undergraduate · Hyderabad, India</div>
+      <h1>Hi, I'm<br><span>CH Sai Akshitha.</span></h1>
+      <p>I enjoy building practical technology that solves real problems. My interests span Python development, machine learning, computer vision, and intelligent applications.</p>
+      <div class="actions"><a class="btn primary" href="#projects">Explore my work ↗</a><a class="btn" href="#contact">Get in touch</a></div>
+    </div>
+    <aside class="hero-card">
+      <div class="avatar">SA</div>
+      <h3>Curious mind. Practical builder.</h3>
+      <p>Focused on learning, experimenting, and turning ideas into working applications.</p>
+      <div class="quick"><div><strong>8.84</strong><small>B.Tech CGPA</small></div><div><strong>249+</strong><small>LeetCode problems</small></div><div><strong>3+</strong><small>Project areas</small></div><div><strong>2027</strong><small>Graduation</small></div></div>
+    </aside>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">A little about me</div><h2>Building skills through projects.</h2></div>
+    <div class="about-grid">
+      <div class="panel"><p>I'm a Computer Science undergraduate at B V Raju Institute of Technology. I like understanding how systems work, solving programming problems, and applying what I learn through hands-on projects. I’m especially interested in AI/ML and software development, and I’m continuously improving my engineering fundamentals.</p></div>
+      <div class="panel facts"><div class="fact"><b>Location</b><span>Hyderabad, Telangana</span></div><div class="fact"><b>Degree</b><span>B.Tech · Computer Science</span></div><div class="fact"><b>Graduation</b><span>2027</span></div><div class="fact"><b>Focus</b><span>Python · AI/ML · Development</span></div></div>
+    </div>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Selected work</div><h2>Projects & prototypes.</h2><p>A selection of applications and research-oriented prototypes I have worked on.</p></div>
+    <div class="cards">
+      <article class="project"><div class="project-top"><h3>Lung Cancer Detection System</h3><span class="tag">Deep Learning</span></div><p>Built an image-classification application to categorize lung CT images using a deep learning model. Added image preprocessing and a Streamlit interface for user-friendly predictions.</p><div class="stack"><span>Python</span><span>TensorFlow</span><span>Keras</span><span>Streamlit</span></div></article>
+      <article class="project"><div class="project-top"><h3>Online Proctoring System</h3><span class="tag">Computer Vision</span></div><p>Developed an exam-monitoring prototype with head-pose estimation and audio monitoring to help identify potentially suspicious activity during online examinations.</p><div class="stack"><span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>Matplotlib</span></div></article>
+      <article class="project"><div class="project-top"><h3>Robust Object Detection in Low Visibility</h3><span class="tag">Research Prototype</span></div><p>Explored object detection under blur, noise, fog, and low-light conditions using GroundingDINO, with image-quality analysis and preprocessing to study detection stability.</p><div class="stack"><span>Python</span><span>GroundingDINO</span><span>OpenCV</span><span>Computer Vision</span></div></article>
+      <article class="project"><div class="project-top"><h3>Privacy-Preserving Multimodal RAG</h3><span class="tag">In Development</span></div><p>Working on a retrieval-augmented generation system focused on document and multimodal knowledge retrieval, with selective knowledge unlearning and entity forgetting.</p><div class="stack"><span>Python</span><span>RAG</span><span>Vector Database</span><span>LLMs</span></div></article>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">What I work with</div><h2>Technical toolkit.</h2></div>
+    <div class="skills">
+      <div class="skillbox"><h3>Programming</h3><p>Python · SQL · C++</p></div>
+      <div class="skillbox"><h3>Libraries & Frameworks</h3><p>TensorFlow · Keras · OpenCV · NLTK · spaCy · Pandas · NumPy · Streamlit</p></div>
+      <div class="skillbox"><h3>Developer Tools</h3><p>Git · GitHub · VS Code · Jupyter Notebook · Google Colab · Anaconda</p></div>
+      <div class="skillbox"><h3>Databases</h3><p>MySQL · ChromaDB</p></div>
+      <div class="skillbox"><h3>Core Concepts</h3><p>DSA · OOP · DBMS · Operating Systems</p></div>
+      <div class="skillbox"><h3>Areas of Interest</h3><p>Machine Learning · Deep Learning · NLP · Computer Vision</p></div>
+    </div>
+  </div></section>
+
+  <section id="education"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Education</div><h2>Academic journey.</h2></div>
+    <div class="timeline">
+      <div class="edu"><div><h3>B V Raju Institute of Technology</h3><p>B.Tech in Computer Science · CGPA: 8.84</p><p>Hyderabad, Telangana</p></div><span class="date">2023 – 2027</span></div>
+      <div class="edu"><div><h3>Narayana Junior College</h3><p>Intermediate (MPC) · 982/1000</p><p>Vijayawada, Andhra Pradesh</p></div><span class="date">2021 – 2023</span></div>
+      <div class="edu"><div><h3>Sri Chaitanya School</h3><p>SSC · 600/600</p><p>Chintalapudi, Andhra Pradesh</p></div><span class="date">2021</span></div>
+    </div>
+  </div></section>
+
+  <section id="certifications"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Learning</div><h2>Certifications & achievements.</h2></div>
+    <div class="certs">
+      <div class="cert"><b>Salesforce Certified Agentforce Specialist</b><span>December 2025</span></div>
+      <div class="cert"><b>NPTEL – Introduction to Machine Learning</b><span>April 2025</span></div>
+      <div class="cert"><b>NPTEL – The Joy of Computing using Python</b><span>Elite Certification · April 2024</span></div>
+      <div class="cert"><b>249+ DSA problems solved</b><span>LeetCode</span></div>
+      <div class="cert"><b>Contest rating: 1723</b><span>Top 12.06% globally · LeetCode</span></div>
+      <div class="cert"><b>50 Days Badge</b><span>LeetCode</span></div>
+    </div>
+  </div></section>
+
+  <section id="contact"><div class="wrap"><div class="contact">
+    <div><div class="eyebrow">Let's connect</div><h2>Have an opportunity or an idea?</h2><p>I’d be happy to connect, collaborate, or discuss my projects.</p></div>
+    <div class="contact-links"><a class="btn primary" href="mailto:chitlurisaiakshitha@gmail.com">Email me ↗</a><a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a><a class="btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a><a class="btn" href="https://leetcode.com/" target="_blank" rel="noreferrer">LeetCode</a></div>
+  </div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> CH Sai Akshitha</span><span>Designed & built with curiosity.</span></div></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const menuBtn = document.getElementById('menuBtn');
+  const navlinks = document.getElementById('navlinks');
+  menuBtn.addEventListener('click', () => navlinks.classList.toggle('open'));
+  navlinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navlinks.classList.remove('open')));
+</script>
+</body>
+</html>
